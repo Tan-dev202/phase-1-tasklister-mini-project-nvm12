@@ -1,24 +1,54 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Task Lister</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div id="main-content">
-    <h1>To-Do List App™️</h1>
-    <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task:</label>
-      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Add Task">
-    </form>
-    <div id="list">
-      <h2>My Tasks</h2>
-      <ul id="tasks">
-      </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Lister</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="main-content">
+      <h1>To-Do List App™️</h1>
+      <form id="create-task-form" action="" method="POST">
+        <label for="new-task-description">Task:</label>
+        <input
+          type="text"
+          id="new-task-description"
+          name="new-task-description"
+          placeholder="description"
+        />
+        <label for="new-task-user">User:</label>
+        <input
+          type="text"
+          id="new-task-user"
+          name="new-task-user"
+          placeholder="assigned to"
+        />
+
+        <label for="new-task-duration">Duration:</label>
+        <input
+          type="number"
+          id="new-task-duration"
+          name="new-task-duration"
+          placeholder="hours"
+        />
+
+        <label for="new-task-due">Due Date:</label>
+        <input type="date" id="new-task-due" name="new-task-due" />
+
+        <label for="new-task-priority">Priority:</label>
+        <select id="new-task-priority" name="priority">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+        <input type="submit" value="Add Task" />
+      </form>
+      <div id="list">
+        <h2>My Tasks</h2>
+        <button id="sort-button">Sort by Priority</button>
+        <ul id="tasks"></ul>
+      </div>
+      <script src="./src/index.js"></script>
     </div>
-    <script src="./src/index.js"></script>
-  </div>
-</body>
+  </body>
 </html>
