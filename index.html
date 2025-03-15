@@ -2,27 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Flatiron Task Lister</title>
+  <title>Task Lister</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
-
+    <h1>To-Do List App™️</h1>
     <form id="create-task-form" action="" method="POST">
-      <label for="new-task-description">Task description:</label>
+      <label for="new-task-description">Task:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <input type="submit" value="Add Task">
     </form>
-
     <div id="list">
-      <h2>My Todos:</h2>
+      <h2>My Tasks</h2>
       <ul id="tasks">
       </ul>
     </div>
-
     <script src="./src/index.js"></script>
   </div>
-
 </body>
 </html>
