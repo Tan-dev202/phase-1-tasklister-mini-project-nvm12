@@ -1,4 +1,3 @@
-// This ensures that the script runs only after the HTML page has fully loaded.
 document.addEventListener("DOMContentLoaded", () => {
   // taskForm: The form where users input tasks.
   // taskList: The <ul> where tasks will be displayed.
